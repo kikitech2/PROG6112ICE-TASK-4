@@ -1,0 +1,32 @@
+public abstract class Fine implements iFine {
+    public String citizenName;
+    public String citizenSpeed;
+    public String citizenFine;
+
+    public Fine(String citizenName, String citizenSpeed, String citizenFine) {
+
+        this.citizenName = citizenName;
+        this.citizenSpeed = citizenSpeed;
+
+
+    }
+
+    public String getCitizenName() {
+        return citizenName;
+    }
+
+    public String getCitizenSpeed() {
+        return citizenSpeed;
+    }
+
+    public String CitizenFine(int citizenSpeed) {
+        if (citizenSpeed >= 120) {
+            double Fine = citizenSpeed * 10.20;
+            System.out.println("Fine");
+        } else {
+            System.out.println("no fine");
+            return citizenFine;
+        }
+        return citizenFine;
+    }
+}
