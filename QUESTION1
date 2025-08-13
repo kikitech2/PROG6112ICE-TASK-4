@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String[] months = {"%10s/%12s/%12/%10s","JAN", "FEB", "MAR"};
+        String[] cities = {"JHB", "DBN", "CTN", "PE"};
+        int[][] values = {{128, 135, 139}, {155, 129, 175}, {129, 130, 185,}, {195, 155, 221}};
+        String km;
+
+        System.out.println("************************************************");
+        System.out.println("SPEEDING FINES REPORT");
+        System.out.println("************************************************");
+
+            System.out.println("************************************************");
+            System.out.println("Maximum speed captured"+ ":");
+            System.out.println("Minimum speed captured" + ":");
+            System.out.println("************************************************");
+        for (int i = 0; i < months.length; i++) {
+            System.out.println(months[i] + ":");
+            int j;
+            for (j = 0; j < values[i].length; j++) ;
+            System.out.println(cities[i] + ":");
+            values[i][j] = scanner.nextInt();
+
+
+
+        }
+    }
+}
+
