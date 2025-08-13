@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String Name;
+        int speed;
+
+        System.out.println("Enter the person name:");
+        Name = scanner.nextLine();
+        System.out.println("Enter the speed:");
+        speed = scanner.nextInt();
+
+
+    }
+
+}
