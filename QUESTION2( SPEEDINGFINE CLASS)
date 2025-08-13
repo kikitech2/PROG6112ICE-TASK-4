@@ -1,0 +1,19 @@
+public class SpeedingFines extends Fine {
+
+    public SpeedingFines(String citizenName, String citizenSpeed, String citizenFine) {
+        super(citizenName, citizenSpeed, citizenFine);
+    }
+
+    @Override
+    public void PrintFine() {
+        System.out.println("**********************************");
+        System.out.println("PERSON" + getCitizenName());
+        System.out.println("SPEED" + getCitizenSpeed());
+        System.out.println("FINE PAYABLE"+ CitizenFine());
+        System.out.println("**********************************");
+    }
+
+    private String CitizenFine() {
+        return CitizenFine();
+    }
+}
